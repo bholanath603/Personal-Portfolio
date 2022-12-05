@@ -258,6 +258,7 @@ nav ul li a:hover::after{
 }
 .btn:hover{
     background: #ff004f;
+    color: #fff;
 }
 
 /*----Contact-----*/
@@ -291,6 +292,7 @@ nav ul li a:hover::after{
 }
 .contact-button{
     display: flex;
+
 }
 .contact-right form{
     width: 100%;
