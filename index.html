@@ -16,13 +16,15 @@
         <div class="container">
             <nav>
                 <P class="logo">Portfolio...</P>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>UI Developer</p>
@@ -32,7 +34,7 @@
     </div>
 
     <!-- -----------about---------------- -->
-
+    
     <div id="about">
         <div class="container">
             <div class="row">
@@ -85,33 +87,107 @@
             </div>
         </div>
     </div>
+
 <!-- ----------Services------- -->
     <div id="service">
         <div class="container">
             <h1 class="sub-titles">My Services</h1>
-            <div class="services-list">
+            <div class="services-list ">
                 <div>
                     <i class="fa-solid fa-code"></i>
                     <h2>Web Design</h2>
                     <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque mollitia ut, adipisci dolor cupiditate tenetur vero iusto aperiam neque perspiciatis laboriosam repellat tempora debitis maiores minima, non alias odit! Ea.</P>
-                    <a href="#">learn more</a>
+                    <a href="#">Learn more</a>
                 </div>
                 <div>
                     <i class="fa-brands fa-uikit"></i>
                     <h2>UI Design</h2>
                     <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque mollitia ut, adipisci dolor cupiditate tenetur vero iusto aperiam neque perspiciatis laboriosam repellat tempora debitis maiores minima, non alias odit! Ea.</P>
-                    <a href="#">learn more</a>
+                    <a href="#">Learn more</a>
                 </div>
                 <div>
                     <i class="fa-brands fa-app-store"></i>
                     <h2>App Design</h2>
                     <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque mollitia ut, adipisci dolor cupiditate tenetur vero iusto aperiam neque perspiciatis laboriosam repellat tempora debitis maiores minima, non alias odit! Ea.</P>
-                    <a href="#">learn more</a>
+                    <a href="#">Learn more</a>
                 </div>
             </div>
         </div>
-
     </div>
+    <!--  -----portfolio------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./src/images/Digital Marketing.gif">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Any Thing</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./src/images/image2.gif">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Any Thing</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./src/images/image6.gif">
+                    <div class="layer">
+                        <h3>Shoping App</h3>
+                        <p>Any Thing</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- ----contact----- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-paper-plane"></i>sahoo.bholanath729@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91-7751074711</p>
+                    
+                    <div class="social-icons">
+                        <a href="http://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="http://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="http://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="http://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <div class="contact-button">
+                    <a href="./src/images/Shyam IT RESUME.docx" download class="btn">Download CV</a>
+                    <a class="btn" href="https://github.com/bholanath603">GITHUB</a>
+                    </div>
+                </div>
+               <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+                <span id="msg"></span>
+               </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Bholanath 2022
+
+        </p>
+    </div>
+
+
     <script src="./src/script.js">
     </script>  
 </body>
