@@ -292,7 +292,9 @@ nav ul li a:hover::after{
 }
 .contact-button{
     display: flex;
-
+}
+a{
+    text-decoration: none;
 }
 .contact-right form{
     width: 100%;
@@ -303,7 +305,6 @@ form input,form textarea{
     background: #262626;
     padding: 15px;
     margin: 15px 0;
-    color: #fff;
     font-size: 20px;
     border-radius: 10px;
 }
